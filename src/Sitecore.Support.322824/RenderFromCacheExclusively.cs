@@ -28,7 +28,10 @@
 
     public override void Process(RenderRenderingArgs args)
     {
-      args.CacheKey = args.CacheKey + "_#id:" + args.Rendering.UniqueId.ToString();
+      if (args.CacheKey == null)
+      {
+        args.CacheKey = args.CacheKey + "_#id:" + args.Rendering.UniqueId.ToString();
+      }
       base.Process(args);
     }
 
