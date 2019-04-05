@@ -58,6 +58,10 @@
       <HintPath>..\packages\SXA90.Sitecore.XA.Foundation.Common.1.8.0\lib\Sitecore.XA.Foundation.Common.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Multisite, Version=3.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SXA90.Sitecore.XA.Foundation.Multisite.1.8.0\lib\Sitecore.XA.Foundation.Multisite.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Sitecore.XA.Foundation.Presentation, Version=3.8.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SXA90.Sitecore.XA.Foundation.Presentation.1.8.0\lib\Sitecore.XA.Foundation.Presentation.dll</HintPath>
       <Private>False</Private>
@@ -73,7 +77,9 @@
     <Compile Include="RenderFromCacheExclusively.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\zzz\Sitecore.Support.322824.config" />
+    <Content Include="App_Config\Include\zzz\Sitecore.Support.322824.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
